@@ -7,7 +7,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: #350363;
+    background-color: #1b149e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,9 +18,9 @@ main{
     width: 30vw;
     text-align: center;
     background-color: #c6bad2;
-    border: 2px solid #350363;
+    border: 2px solid #1b149e;
     border-radius: 5px;
-    color: #1f2933;
+    color: #1b149e;
 }
 
 h2{
@@ -30,6 +30,7 @@ h2{
 
 h3{
     font-size: 30px;
+    margin-top: 25px;
 }
 
 p{
@@ -37,9 +38,86 @@ p{
 }
 
 .image{
-    width: 50%;
-    max-height: 400px;
+    width: 35%;
+    max-height: 400px;  
     height: auto;
-    margin: 30px 0 40px 0;
+    margin: 10px 0 30px 0;
 }
 
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+button{
+    min-width: 280px;
+    background-color: #241dab;
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: uppercase;
+}
+
+button:hover{
+    box-shadow: rgba(33, 11, 196, 0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+button:last-child{
+    background-color: #150bcb;
+    margin-bottom: 0;
+}
+
+.gameArea{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGameButton{
+    margin: 20px 20px;
+}
+
+input{
+    border: 2px solid #1b149e;
+    border-radius: 5px;
+    background: transparent;
+    margin: 40px 0;
+    padding: 20px 0;
+    width: 250px;
+    text-align: center;
+}
+
+.stats{
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 25px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.info span{
+    font-size: 20px;
+    color: #ff0511;
+}
